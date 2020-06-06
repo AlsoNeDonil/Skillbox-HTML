@@ -9,36 +9,36 @@
 		<main>
 			<h2>Отправка заявки на конференцию</h2>
 			<h3>Основные данные</h3>
-			<form method="post" action="https://echo.htmlacademy.ru/">
+			<form method="post" action="https://echo.htmlacademy.ru/" enctype="multipart/form-data">
 				<label for="name"><b>* Фамилия, имя, отчество:</b></label><br><br>
-				<input type="text" size="40" name="birth" required="required"><br><br>
-				<lavel for="birth"><b>Дата рождения:</b></label><br><br>
-				<input type="date" name="birth"><br><br>
-				<label for="gender"><b>Пол:</b></label><br><br>
+				<input type="text" size="40" name="birth" id="name" required="required"><br><br>
+				<label for="birth"><b>Дата рождения:</b></label><br><br>
+				<input type="date" name="birth" id="birth"><br><br>
+				<label><b>Пол:</b></label><br><br>
 				<input type="radio" name="gender" id="male" value="v1"><label for="male">Мужской</label>
-				<input type="radio" name="gender" id="female"value="v2"><label for="female">Женский</label><br>
+				<input type="radio" name="gender" id="female" value="v2"><label for="female">Женский</label><br>
 
 				<p><b>Данные для создания личного кабинета</b></p>
 				<label for="email"><small><b>* Адрес электронной почты:</b></small></label><br><br>
-				<input type="email" size="40" name="email" required="required"><br><br>
+				<input type="email" size="40" name="email" id="email" required="required"><br><br>
 				<label for="password"><small><b>* Пароль для создание личного кабинета:</b></small></label><br><br>
-				<input type="password" size="40" name="password" required="required"><br><br>
+				<input type="password" size="40" name="password" id="password" required="required"><br><br>
 				<label for="alsopasswd"><small><b>* Подтверждение пароля:</b></small></label><br><br>
-				<input type="password" size="40" name="alsopasswd" required="required">
+				<input type="password" size="40" name="alsopasswd" id="alsopasswd" required="required">
 
 				<p><b>Материалы для конференции</b></p>
 				<label for="theme"><small><b>* Тема доклада:</b></small></label><br><br>
-				<input type="text" size="40" name="theme" required="required"><br><br>
+				<input type="text" size="40" name="theme" id="theme" required="required"><br><br>
 				<label for="thesis"><small><b>* Тезисы доклада(не более 1000 символов):</b></small></label><br><br>
-				<textarea cols="40" rows="10" required="required" name="thesis"></textarea><br><br>
+				<textarea cols="40" rows="10" required="required" name="thesis" id="thesis"></textarea><br><br>
 				<label for="presentation"><small><b>Файл презентации:</b></small></label><br><br>
-				<input type="file" name="presentation" enctype="multipart/form-data"><br><br>
+				<input type="file" name="presentation" id="presentation"><br><br>
 
 				<p><b>Дополнительные опции</b></p>
-				<input type="checkbox" name="isHotel"><label for="isHotel">Проживание в отеле</label><br>
-				<input type="checkbox" checked name="breakfast"><label for="breakfast">Завтрак</label><br>
-				<input type="checkbox" name="dinner"><label for="dinner">Обед</label><br>
-				<input type="checkbox" name="supper"><label for="supper">Ужин</label><br>
+				<input type="checkbox" name="isHotel" id="isHotel"><label for="isHotel">Проживание в отеле</label><br>
+				<input type="checkbox" checked name="breakfast" id="breakfast"><label for="breakfast">Завтрак</label><br>
+				<input type="checkbox" name="dinner" id="dinner"><label for="dinner">Обед</label><br>
+				<input type="checkbox" name="supper" id="supper"><label for="supper">Ужин</label><br>
 				<hr>
 				<input type="submit" name="send" value="Отправить">
 				<hr>
